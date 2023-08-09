@@ -429,7 +429,7 @@ body, main {
  @media screen and (max-width: 567px){
 
   #home{
-    background-image: url(/assets/hero/hero-mobile.jpg);
+    background-image: url("/assets/hero/hero-mobile.jpg");
   }
 
 .container{
@@ -691,9 +691,9 @@ padding-bottom: 3rem;
   display: none;
 }
 
-#home{
+/* #home{
   background-image: url(/assets/hero/hero-pc.jpg);
-}
+} */
 
 .home__title{
   font-size: var(--big-font-size);
