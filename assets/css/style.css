@@ -112,10 +112,10 @@ body, main {
   min-height: 100vh; 
 }
 
-/* HERO BACKGROUND IMAGE MOBILE */
+/* HERO BACKGROUND IMAGE */
 #home{
   /* Location of the image */
-  background-image: url(assets/hero/hero-pc.jpg);
+  background-image: url(../assets/hero/hero-pc.jpg);
   background-color:#464646;
   
   /* Image is centered vertically and horizontally at all times */
