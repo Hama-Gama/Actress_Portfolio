@@ -112,39 +112,6 @@ body, main {
   min-height: 100vh; 
 }
 
-/* HERO BACKGROUND IMAGE */
-#home{
-  /* Location of the image */
-  background-image: url("assets/hero/hero-pc.jpg");
-  background-color:#464646;
-  
-  /* Image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  background-repeat: no-repeat;
-  
-  /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
-  background-attachment: fixed;
-  
-  background-size: cover;
-  
-  /* Pick a solid background color that will be displayed while the background image is loading */
- 
-  
-  /* SHORTHAND CSS NOTATION
-   * background: url(background-photo.jpg) center center cover no-repeat fixed;
-   */
-}
-
-/* #home{
-  background-image: url(./assets/hero/hero-pc.jpg);
-} */
-
-
-
-
-
 /* =========== REUSABLE CSS CLASSES ================ */
 .section{
   padding: 0 0 4rem;
@@ -311,7 +278,6 @@ body, main {
 }
 
 /* HOME */
-
 .home__container{
   position: relative;
   gap: 1rem;
@@ -321,6 +287,13 @@ body, main {
   grid-template-columns: 1fr;
   align-items: flex-end;
   height: 85vh;
+}
+
+.home{
+  background-image: url(/assets/hero/hero-mobile.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: top center;
 }
 
 .home__title{
@@ -427,11 +400,6 @@ body, main {
 /* ========================= MEDIA QUERIES ================== */
  /* SMALL DEVICES */
  @media screen and (max-width: 567px){
-
-  #home{
-    background-image: url("/assets/hero/hero-mobile.jpg");
-  }
-
 .container{
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
@@ -512,8 +480,11 @@ body, main {
   height: 95vh;
 }
 
-#home{
+.home{
   background-image: url(/assets/hero/hero-tablet.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
 }
 
 .home__data{
@@ -625,8 +596,11 @@ body, main {
   column-gap: 2rem;
  }
 
- #home{
+ .home{
   background-image: url(/assets/hero/hero-laptop.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
 }
 
  .grid__accounts{
@@ -691,9 +665,13 @@ padding-bottom: 3rem;
   display: none;
 }
 
-/* #home{
+.home{
   background-image: url(/assets/hero/hero-pc.jpg);
-} */
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
 
 .home__title{
   font-size: var(--big-font-size);
